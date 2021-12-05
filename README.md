@@ -1,24 +1,24 @@
-# 2048
+<h3 align="center">2048</h3>
+web版本的2048游戏, 使用vue3.0编写
+#### 游戏规则
+1. 游戏界面有16个方格, 初始状态是两个值为2或4的数字格
+2. 指定向⬆️⬇️⬅️➡️方向滑动, 所有方块都会向该方向滑动
+3. 相碰撞的两个带有数字格子的值会相加并合并为一个格子
+4. 每次滑动都会在随机空位上生成一个值为2或4的数字格
+5. 若游戏盘的16个方格均被填满且无法移动, 则判定为游戏失败
+#### 项目启动
+- ```git clone https://github.com/Tourscholar/2048```  克隆仓库到本地
+- ```npm install```  安装依赖
+- ```npm run serve``` 启动项目
 
-## Project setup
-```
-npm install
-```
+#### 游戏所需数据
+- ```score```    记录游戏分数
+- ```numberCells```    存放数字格的数组, 数字格是由这个数组生成的
+- ```color```    后续获得数字格对应的背景色 
+- ```auxld```    用来辅助唯一标记数字格的id
+- ```success```    标记游戏是否通关
+- ````gameover```    标记游戏是否通关
+- ```canMove```    判断是否能移动
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### 项目预览
+[2048](https://tourscholar.github.io/2048/dist/index.html)
