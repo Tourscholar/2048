@@ -36,7 +36,7 @@
 
           position: absolute;
           z-index: ${cell.num};
-          backgroundColor: ${cell.color};
+          background-color: ${cell.color};
           top: ${getTop(cell)};
           left: ${getLeft(cell)};
           `"
